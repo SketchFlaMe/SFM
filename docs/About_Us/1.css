@@ -71,7 +71,7 @@ a:hover{
 	transition-duration:0.5s;
 	transition-timing-function:ease-in-out;
 	overflow:hidden;
-	opacity: 0.8;
+	/* opacity: 0.8; */
 }
 .box_shadow{
 	position:absolute;
@@ -366,6 +366,7 @@ a:hover{
 	z-index:1;
 	bottom:5px;
 	color:#777;
+	padding:0px 30px 0px 30px;
 }
 .l2{
 	transform:translateX(1px);
