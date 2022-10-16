@@ -322,6 +322,7 @@ a:hover{
 	z-index:1;
 	bottom:5px;
 	color:#777;
+	padding:0px 30px 0px 30px;
 }
 .l2{
 	transform:translateX(1px);
