@@ -114,7 +114,7 @@ a:hover{
 .l_bg{
 	position:absolute;
 	width:340px;
-	height:45%;
+/*	height:45%;*/
 	border-radius:10px;
 	overflow:hidden;
 	z-index:1;
