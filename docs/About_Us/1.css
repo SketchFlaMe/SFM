@@ -107,7 +107,7 @@ a:hover{
 	color:#5bcefa;
 }
 .text_box:hover .a{
-	top:133px;
+	top:35px;
 	right:0px;
 	box-shadow: 0 0 10px #c4c4c4;
 }
@@ -170,7 +170,7 @@ a:hover{
 	height:125px;
 	background:#c4c4c4;
 	border-radius:10px;
-	top:85px;
+	top:-10px;
 	right:340px;
 	z-index:5;
 	transition-duration:0.5s;
