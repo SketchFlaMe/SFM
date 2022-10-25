@@ -107,14 +107,14 @@ a:hover{
 	color:#5bcefa;
 }
 .text_box:hover .a{
-	top:35px;
+	top:133px;
 	right:0px;
 	box-shadow: 0 0 10px #c4c4c4;
 }
 .l_bg{
 	position:absolute;
 	width:340px;
-/*	height:45%;*/
+	height:45%;
 	border-radius:10px;
 	overflow:hidden;
 	z-index:1;
@@ -170,7 +170,7 @@ a:hover{
 	height:125px;
 	background:#c4c4c4;
 	border-radius:10px;
-	top:-10px;
+	top:85px;
 	right:340px;
 	z-index:5;
 	transition-duration:0.5s;
