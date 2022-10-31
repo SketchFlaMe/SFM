@@ -295,7 +295,10 @@ a:hover{
 	opacity: 1;
 }
 .text_box:hover +.head_circular2{
-	background:#5bcefa;
+	/* background:#5bcefa; */
+	transform: rotate(180deg);
+	/* transform: translateX(-50px); */
+	left:140px;
 	top:10;
 }
 .card:hover .box_shadow{
@@ -365,6 +368,7 @@ a:hover{
 	z-index:3;
 	transition-duration:0.5s;
 	transition-timing-function:ease-in-out;
+	background:linear-gradient(180deg,transparent,transparent 30%,#5bcefa);
 }
 .a{
 	display:block;
