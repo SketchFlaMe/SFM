@@ -68,6 +68,7 @@
 .text_box_sfm:hover +.head_circular2_sfm{
 	background:#ff6421;
 	top:10;
+	box-shadow: 0 0 4px 4px #ff944e;
 }
 .card_sfm:hover .box_shadow_sfm{
 	box-shadow: 0 0 20px #ff6421;
