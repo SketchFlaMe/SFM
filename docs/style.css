@@ -366,7 +366,7 @@ a:hover{
 .g1{
 	/* position:relative;
 	top:80px; */
-	padding:80px 0px 40px 0px;
+	padding:180px 0px 80px 0px;
 	width:100%;
 	display:flex;
 	justify-content:center;
@@ -376,14 +376,18 @@ a:hover{
 .g1 .g1_g1{
 	display:block;
 	width:350px;
+	height:300px;
 	max-height:350px;
-	padding:20px 20px 20px 20px;
+	box-shadow: 0 0 15px #f1f1f1;
+	border-radius:10px;
+	margin:20px 20px 20px 20px;
 }
 
 .g1 .g1_g1 .box1{
 	font-size:24px;
-
+	background:#fff;
+	margin:15px 15px 15px 15px;
 }
 .g1 .g1_g1 .box1 .title1{
-	padding:0px 0px 10px 0px;
+	margin:0px 0px 10px 0px;
 }
