@@ -82,7 +82,8 @@
 
 }
 .loading .sfm_logo{
-    animation:load_logo 2s linear infinite
+    animation:load_logo 2s linear infinite;
+	margin:20px 20px 20px 20px;
 }
 .loading{
 	display:flex;
