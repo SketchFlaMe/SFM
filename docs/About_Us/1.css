@@ -16,6 +16,7 @@ a{
 	text-decoration:none;
 	target:_blank;
 	color:#777;
+	outline:none; 
 }
 a:hover{
 	color:#ff6421;
