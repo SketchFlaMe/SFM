@@ -435,3 +435,50 @@ a:hover{
 	max-width:500px;
 	margin:15px 20px 0px 20px;
 }
+
+.g3{
+	/* position:relative;
+	top:80px; */
+	/* padding:180px 0px 80px 0px; */
+	width:100%;
+	justify-content:center;
+	display:flex;
+	flex-wrap:wrap;
+	margin:150px 0px 75px 0px;
+	padding-top:25px;
+	padding-bottom:25px;
+	display:flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	
+}
+.g3 .div_image1{
+	width:700px;
+	perspective: 1000px;
+	margin-bottom:40px;
+	text-align:center;
+}
+.g3 .div_image1 .image1{
+    transform: rotateY(-30deg);
+	transform-origin: center;
+	transition: 0.3s;
+	max-width:90%;
+}
+.g3 .div_image1 .image1:hover{
+    transform: rotateY(0deg);
+}
+.g3 .text_box1{
+	width:600px;
+	padding:0px 20px 20px 20px;
+	color:#9e9e9e;
+}
+.g3 .text_box1 .title1{
+	margin:0px 0px 0px 220px;
+	max-width:90%;
+}
+.g3 .text_box1 .text1{
+	max-width:500px;
+	/* margin:15px 20px 0px 20px; */
+	margin:0px 20px 0px 20px;
+}
+
