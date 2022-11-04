@@ -384,6 +384,9 @@ a:hover{
 	margin:20px 20px 20px 20px;
 	padding: 15px 15px 15px 15px;
 }
+.g1 .g1_g1:hover{
+	box-shadow: 0 0 15px #6ff8ff;
+}
 .g1 .g1_g1 .box1{
 	font-size:24px;
 	background:#fff;
