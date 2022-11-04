@@ -473,7 +473,10 @@ a:hover{
 	color:#9e9e9e;
 }
 .g3 .text_box1 .title1{
-	margin:0px 0px 0px 220px;
+	/* margin:0px 0px 0px 220px; */
+	display:flex;
+	flex-direction: row-reverse;
+	width:100%;
 	max-width:90%;
 }
 .g3 .text_box1 .text1{
