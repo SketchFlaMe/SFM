@@ -385,7 +385,15 @@ a:hover{
 	padding: 15px 15px 15px 15px;
 }
 .g1 .g1_g1:hover{
-	box-shadow: 0 0 15px #6ff8ff;
+	animation:g1_g1 1s 1;
+}
+@keyframes g1_g1{
+	form{
+		box-shadow: 0 0 15px #f1f1f1;
+	}
+	to{
+		box-shadow: 0 0 15px #6ff8ff;
+	}
 }
 .g1 .g1_g1 .box1{
 	font-size:24px;
