@@ -131,7 +131,7 @@ a:hover{
 	border-radius:0px 0px 5px 5px; 
 }
 .box_language{
-	height:80px;
+	height:120px;
 	box-shadow:-5px 5px 10px -4px #777,5px 5px 10px -4px #777;
 	border-radius:0px 0px 5px 5px;
 	display:none;
@@ -150,7 +150,7 @@ a:hover{
 }
 .buttons .language:hover >.box_language{
 	display:block;
-	animation:box_language 1s linear 1;
+	animation:box_language 0.5s linear 1;
 }
 @keyframes box_language{
 	0%{opacity:0;}
@@ -217,7 +217,7 @@ a:hover{
 }
 .buttons .list:hover >.box_list{
 	display:block;
-	animation:box_list 1s linear 1;
+	animation:box_list 0.5s linear 1;
 }
 .top_image1{
 	position:relative;
