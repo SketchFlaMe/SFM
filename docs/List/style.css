@@ -441,3 +441,13 @@ a:hover{
 	color:#fec23e;
 	margin:0px 0px 15px 0px;
 }
+.g1_1 .error1{
+	height:20px;
+	width:80px;
+	border-radius:20px;
+	background:#cc0000;
+	color:#fff;
+	text-align:center;
+	line-height:20px;
+	margin:15px 0px 0px 0px;
+}
