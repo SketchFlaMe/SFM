@@ -381,10 +381,7 @@ a:hover{
 	padding:0px 0px 85px 0px;
 }
 
-.g1_1 .h3{
-	color:#ff6421;
-	margin:0px 0px 15px 0px;
-}
+
 .g1_1 .link{
 	overflow:hidden;
 	white-space: nowrap;
@@ -424,6 +421,7 @@ a:hover{
 	box-shadow: 0 0 15px #e2e2e2;
 	background:#f9f9f9;
 }
+
 /* .g1_1 .box_shadow :hover{
 	box-shadow: 0 0 15px #ff6421;
 	position:absolute;
@@ -436,8 +434,15 @@ a:hover{
 	height:3px;
 	background:#b9b9b9;
 }
-
+.g1_1 .h3{
+	color:#5bcefa;
+	margin:0px 0px 15px 0px;
+}
 .g1_1 .h3_0{
+	color:#f5a8b8;
+	margin:0px 0px 15px 0px;
+}
+.g1_1 .h3_eu-us{
 	color:#fec23e;
 	margin:0px 0px 15px 0px;
 }
