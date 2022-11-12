@@ -528,6 +528,7 @@ a:hover{
 	text-decoration:none;
 	target:_blank;
 	color:#777;
+	transition-duration:0.5s;
 }
 .bottom0 .twitter:hover{
 	color:#55acee;
@@ -536,6 +537,7 @@ a:hover{
 	text-decoration:none;
 	target:_blank;
 	color:#777;
+	transition-duration:0.5s;
 }
 .bottom0 .bilibili:hover{
 	color:#fb7299;
@@ -544,6 +546,7 @@ a:hover{
 	text-decoration:none;
 	target:_blank;
 	color:#777;
+	transition-duration:0.5s;
 }
 .bottom0 .github:hover{
 	color:#000;
@@ -611,4 +614,10 @@ a:hover{
 .bottom0_sfm{
 	height:150px;
 	margin:30px 30px 30px 30px;
+}
+.bottom0_sfm a{
+	transition-duration:0.5s;
+}
+.bottom0_sfm a:hover{
+	color:#ff6421;
 }
