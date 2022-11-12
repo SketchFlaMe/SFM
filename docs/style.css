@@ -369,7 +369,6 @@ a:hover{
 	top:80px; */
 	padding:180px 0px 20px 0px;
 	width:100%;
-	display:flex;
 	justify-content:center;
 	display:flex;
 	flex-wrap:wrap;
@@ -383,18 +382,12 @@ a:hover{
 	border-radius:10px;
 	margin:20px 20px 20px 20px;
 	padding: 15px 15px 15px 15px;
+	transition-duration:0.5s;
 }
 .g1 .g1_g1:hover{
-	animation:g1_g1 1s 1;
+	box-shadow: 0 0 15px #6ff8ff;
 }
-@keyframes g1_g1{
-	form{
-		box-shadow: 0 0 15px #f1f1f1;
-	}
-	to{
-		box-shadow: 0 0 15px #6ff8ff;
-	}
-}
+
 .g1 .g1_g1 .box1{
 	font-size:24px;
 	background:#fff;
@@ -416,7 +409,6 @@ a:hover{
 	padding-bottom:25px;
 	display:flex;
 	align-items: center;
-	
 }
 .g2 .div_image1{
 	width:700px;
