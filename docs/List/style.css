@@ -279,6 +279,7 @@ a:hover{
 	text-decoration:none;
 	target:_blank;
 	color:#777;
+	transition-duration:0.5s;
 }
 .bottom0 .twitter:hover{
 	color:#55acee;
@@ -287,6 +288,7 @@ a:hover{
 	text-decoration:none;
 	target:_blank;
 	color:#777;
+	transition-duration:0.5s;
 }
 .bottom0 .bilibili:hover{
 	color:#fb7299;
@@ -295,6 +297,7 @@ a:hover{
 	text-decoration:none;
 	target:_blank;
 	color:#777;
+	transition-duration:0.5s;
 }
 .bottom0 .github:hover{
 	color:#000;
@@ -363,6 +366,12 @@ a:hover{
 	height:150px;
 	margin:30px 30px 30px 30px;
 }
+.bottom0_sfm a{
+	transition-duration:0.5s;
+}
+.bottom0_sfm a:hover{
+	color:#ff6421;
+}
 .g1{
 	padding-top: 50px;
 	width:100%;
@@ -394,7 +403,7 @@ a:hover{
 	height:100%;
 }
 
-.g1_1 .SFM{
+.g1_1 .box{
 	margin:55px 0px 0px 55px;
 	width:300px;
 	height:150px;
@@ -402,26 +411,17 @@ a:hover{
 	/* border:2px solid #777; */
 	box-shadow: 0 0 15px #e2e2e2;
 	background:#f9f9f9;
+	transition-duration:0.5s;
 }
-.g1_1 .about_us{
-	margin:55px 0px 0px 55px;
-	width:300px;
-	height:150px;
-	border-radius:10px;
-	/* border:2px solid #777; */
-	box-shadow: 0 0 15px #e2e2e2;
-	background:#f9f9f9;
+.g1_1 #zh-cn:hover{
+	box-shadow: 0 0 15px #5bcefa;
 }
-.g1_1 .ccwiki{
-	margin:55px 0px 0px 55px;
-	width:300px;
-	height:150px;
-	border-radius:10px;
-	/* border:2px solid #777; */
-	box-shadow: 0 0 15px #e2e2e2;
-	background:#f9f9f9;
+.g1_1 #en-us:hover{
+	box-shadow: 0 0 15px #fec23e;
 }
-
+.g1_1 #kjk-ttt:hover{
+	box-shadow: 0 0 15px #f5a8b8;
+}
 /* .g1_1 .box_shadow :hover{
 	box-shadow: 0 0 15px #ff6421;
 	position:absolute;
@@ -438,7 +438,7 @@ a:hover{
 	color:#5bcefa;
 	margin:0px 0px 15px 0px;
 }
-.g1_1 .h3_0{
+.g1_1 .h3_kjk-ttt{
 	color:#f5a8b8;
 	margin:0px 0px 15px 0px;
 }
