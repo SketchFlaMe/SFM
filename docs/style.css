@@ -188,7 +188,16 @@ a:hover{
 	height:39px;
 	background:#fff;
 	display:none;
+}
+.SFM2345{
+	width:80px;
+	height:39px;
+	background:#fff;
+	display:none;
 	border-radius:0px 0px 5px 5px;
+}
+.SFM2345 a:hover{
+	color:#ff0000;
 }
 .buttons .list .l1{
 	width:80px;
@@ -197,7 +206,7 @@ a:hover{
 	display:none;
 }
 .box_list{
-	height:80px;
+	height:120px;
 	box-shadow:-5px 5px 10px -4px #777,5px 5px 10px -4px #777;
 	border-radius:0px 0px 5px 5px;
 	display:none;
@@ -210,6 +219,9 @@ a:hover{
 	display:block;
 }
 .buttons .list:hover .gywm{
+	display:block;
+}
+.buttons .list:hover .SFM2345{
 	display:block;
 }
 .buttons .list:hover .l1{
