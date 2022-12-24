@@ -10,6 +10,7 @@
 	height:100vh;
 	background:#fff;
 	z-index:1000;
+	transition-duration:1s;
 }
 .loading .progress_bar{
 	width:300px;

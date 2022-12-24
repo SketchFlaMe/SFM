@@ -8,7 +8,7 @@ body{
 	justify-content:center;
 	align-items:center;
 	min-height:100vh;
-	background:url("image/bg.png")  no-repeat center center;
+	background:url("image/wh_bg.jpg")  no-repeat center center;
    background-size:cover;
    background-attachment:fixed;
    background-color:#FFFFFF;
@@ -23,9 +23,13 @@ a:hover{
 	color:#ff6421;
 	}
 @font-face {
-	        font-family: font1;
-	        src: url("ResourceHanRoundedCN-Heavy.ttf");
-        } 
+	font-family: font1;
+	src: url("ResourceHanRoundedCN-Heavy.ttf");
+} 
+@font-face {
+    font-family: unifont;
+    src: url(unifont.ttf)
+}
 .head{
 	top:0;
 	width:100%;
@@ -241,11 +245,27 @@ a:hover{
 	display:block;
 	animation:box_list 0.5s linear 1;
 }
+.top_image{
+	overflow:hidden;
+}
 .top_image1{
 	margin-top:40px;
 	width:100%;
-	box-shadow: 0 0 20px #777;
+	/* box-shadow: 0 0 20px #777; */
 	background:#fff;
+}
+.top_title{
+	position:absolute;
+	top:40px;
+	width:100%;
+	height:100%;
+	text-align:center;
+	color:#FFF;
+	font-size:60px;
+	padding-top:30vh;
+	font-family: unifont;
+	white-space: nowrap;
+	overflow:hidden;
 }
 
 .head_right{
@@ -593,7 +613,7 @@ a:hover{
     align-items: center;
 	transition-property:all;
 	border-radius: 10px;
-	overflow:hidden
+	overflow:hidden;
 }
 #progressEffect{
 	position: absolute;
