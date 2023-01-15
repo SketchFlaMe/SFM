@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="signupStyle.css">
+<link rel="stylesheet" href="loading.css">
+<title>登入 SketchFlaMe</title>
+<link rel="shortcut icon" href="sfm.ico" />
+</head>
+<body>
+
+<div class="load_bg">
+	<div class="loading">
+		<img class="sfm_logo" src="image/sfm_logo.png" alt="" width=250px>
+		<div class="progress_bar">
+			<div class="progress_bar2">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="box1">
+	<div class="box2" style="top:50%;left:50%;transform:translate(-50%,-50%);">
+		<img class="image1" src="image/1.jpg" height="380px">
+	</div>
+	<div class="box3" style="width:850px;">
+		<div class="loginBox">
+			<div class="loadLoginBox">
+				<div class="h1">登入</div>
+				<div class="box4">
+					<div class="boxHeaders">
+						<img id="headers2" src="user/undefined/headers.png" alt="" style="opacity:1">
+						<img id="headers" src="user/undefined/headers.png" alt="">
+					</div>
+				</div>
+				<div class="boxInupt">
+					<input id="username" type="text" name="username" oninput="getJson()" required>
+					<div class="boxInputText">用户名</div>
+					<div class="line2"></div>
+				</div>
+				<div class="boxInupt">
+					<input id="password" type="password" name="password" required>
+					<div class="boxInputText">密码</div>
+					<button class="displayPassword" type="button" onclick="funDisplayPassword()" onfocus="this.blur()"><svg t="1673632421474" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2887" width="24" height="24"><path d="M515.2 224c-307.2 0-492.8 313.6-492.8 313.6s214.4 304 492.8 304 492.8-304 492.8-304S822.4 224 515.2 224zM832 652.8c-102.4 86.4-211.2 140.8-320 140.8s-217.6-51.2-320-140.8c-35.2-32-70.4-64-99.2-99.2-6.4-6.4-9.6-12.8-16-19.2 3.2-6.4 9.6-12.8 12.8-19.2 25.6-35.2 57.6-70.4 92.8-102.4 99.2-89.6 208-144 329.6-144s230.4 54.4 329.6 144c35.2 32 64 67.2 92.8 102.4 3.2 6.4 9.6 12.8 12.8 19.2-3.2 6.4-9.6 12.8-16 19.2C902.4 585.6 870.4 620.8 832 652.8z" p-id="2888" fill="#777;"></path><path d="M512 345.6c-96 0-169.6 76.8-169.6 169.6 0 96 76.8 169.6 169.6 169.6 96 0 169.6-76.8 169.6-169.6C681.6 422.4 604.8 345.6 512 345.6zM512 640c-67.2 0-121.6-54.4-121.6-121.6 0-67.2 54.4-121.6 121.6-121.6 67.2 0 121.6 54.4 121.6 121.6C633.6 582.4 579.2 640 512 640z" p-id="2889" fill="#777;"></path></svg></button>
+					<div class="line2"></div>
+				</div>
+				<div class="box7">
+					<button class="resetVerificationCode" type="button" onclick="resetVerificationCode()" onfocus="this.blur()"><del><div class="verificationCode"></div></del></button>
+				</div>
+				<div class="inputVerificationCode">
+					<input id="verificationCode" type="text" placeholder="验证码" name="verificationCode" maxlength="4" required>
+					<div class="line">
+						<div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div>
+					</div>
+				</div>
+				<div class="box5">
+					<button class="buttonLogin" type="button" onclick="login()" onfocus="this.blur()">登录</button>
+				</div>
+				<div class="box6">
+					<div class="signUp"><button class="loginSwitchModel" type="button" onclick="switchModel()" onfocus="this.blur()">注册</button></div><div class="forgotPassword">忘记密码</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="signupBox3" style="display: none ; width:850px;">
+		<div class="signupBox" style="height: 380px; width: 380px;">
+			<div class="loadSignupBox" style="display: none; opacity: 0;">
+				<div class="signupH1">注册</div>
+				<div class="signupBoxInupt">
+					<input id="signupUsername" type="text" name="username" oninput="getJson()" required>
+					<div class="boxInputText">用户名</div>
+					<div class="line2"></div>
+				</div>
+				<div class="signupBoxInupt">
+					<input id="signupPassword" type="text" name="password" required>
+					<div class="boxInputText">密码</div>
+					<button class="signupDisplayPassword" type="button" onclick="funSignpuDisplayPassword()" onfocus="this.blur()"><svg t="1673632421474" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2887" width="24" height="24"><path d="M515.2 224c-307.2 0-492.8 313.6-492.8 313.6s214.4 304 492.8 304 492.8-304 492.8-304S822.4 224 515.2 224zM832 652.8c-102.4 86.4-211.2 140.8-320 140.8s-217.6-51.2-320-140.8c-35.2-32-70.4-64-99.2-99.2-6.4-6.4-9.6-12.8-16-19.2 3.2-6.4 9.6-12.8 12.8-19.2 25.6-35.2 57.6-70.4 92.8-102.4 99.2-89.6 208-144 329.6-144s230.4 54.4 329.6 144c35.2 32 64 67.2 92.8 102.4 3.2 6.4 9.6 12.8 12.8 19.2-3.2 6.4-9.6 12.8-16 19.2C902.4 585.6 870.4 620.8 832 652.8z" p-id="2888" fill="#777777;"></path><path d="M512 345.6c-96 0-169.6 76.8-169.6 169.6 0 96 76.8 169.6 169.6 169.6 96 0 169.6-76.8 169.6-169.6C681.6 422.4 604.8 345.6 512 345.6zM512 640c-67.2 0-121.6-54.4-121.6-121.6 0-67.2 54.4-121.6 121.6-121.6 67.2 0 121.6 54.4 121.6 121.6C633.6 582.4 579.2 640 512 640z" p-id="2889" fill="#777777;"></path></svg></button>
+					<div class="line2"></div>
+				</div>
+				<div class="signupBoxInupt">
+					<input id="password2" type="text" name="password2" required>
+					<div class="boxInputText">确认密码</div>
+					<div class="line2"></div>
+				</div>
+				<div class="signupBoxInupt">
+					<input id="email" type="text" name="email" required>
+					<div class="boxInputText">邮箱</div>
+					<button class="getVerificationCode" type="button" onclick="getVerificationCode()" onfocus="this.blur()"><svg t="1673709947688" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2790" width="24" height="24"><path d="M527.247 204.247c113.891 0 227.885 0.717 341.777-0.307 60.373-0.511 88.923 25.48 88.31 87.491-1.434 139.474 0.408 278.947-0.82 418.42-0.716 78.18-31.926 107.241-111.333 107.343-218.573 0.307-437.044 0.307-655.618-0.204-77.667-0.205-124.84-46.764-125.25-123.613-0.716-125.557-0.511-251.114-0.204-376.568 0.204-81.454 30.289-111.845 114.403-112.664 116.245-1.126 232.49-0.307 348.735-0.307v0.41z m-9.21 558.611c109.287 0 218.676-1.33 327.963 0.614 41.443 0.716 58.225-12.382 57.304-55.667-2.252-104.58-0.307-209.364-1.33-314.045-0.103-17.09 9.414-40.625-12.485-49.834-19.954-8.391-32.642 10.13-47.07 21.693-96.906 77.36-195.653 152.572-291.023 231.774-31.517 26.196-51.573 25.275-82.272-0.102-97.11-80.533-197.084-157.484-295.012-237.095-13.098-10.642-25.378-23.74-41.648-19.136-21.08 6.038-13.2 27.22-13.303 42.057-0.716 99.975 1.33 200.052-0.716 300.027-1.126 56.485 23.536 80.328 78.69 79.816 106.831-0.818 213.867-0.204 320.902-0.102zM139.525 262.677c19.851 18.317 25.991 24.763 32.95 30.29 60.885 48.298 121.259 97.211 182.86 144.384 159.837 122.488 160.246 122.488 316.707-2.148 66.41-52.904 131.492-107.343 211.205-172.628-255.411 0.102-490.562 0.102-743.722 0.102z" fill="#777777" p-id="2791"></path></svg></button>
+					<div class="line2"></div>
+				</div>
+				<div class="signupInputVerificationCode">
+					<input id="verificationCode" type="text" placeholder="验证码" name="verificationCode" maxlength="4" required>
+					<div class="line">
+						<div class="l"></div><div class="l"></div><div class="l"></div><div class="l"></div>
+					</div>
+				</div>
+				<div class="signupBox5">
+					<button class="buttonSignup" type="button" onclick="signup" onfocus="this.blur()">注册</button>
+				</div>
+				<div class="signupBox6">
+					<div class="login"><button class="signupSwitchModel" type="button" onclick="switchModel()" onfocus="this.blur()">登入</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<script src="initialization.js"></script>
+<script src="login.js"></script>
+<script src="switchModel.js"></script>
+
+<script>
+    // 获取动画
+    let loader = document.querySelector(".load_bg");
+    // 加载完成事件
+    window.onload = function () {
+        // 加载完成，隐藏动画，显示内容
+		initialization()
+        loader.style.opacity = "0";
+		setTimeout(() => {
+		loader.style.display = "none";
+		},2000);
+    }
+</script>
+
+</body>
+</html>

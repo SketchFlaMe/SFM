@@ -1,0 +1,270 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	display:fles;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	background:url("image/wh_bg.jpg")  no-repeat center center;
+   background-size:cover;
+   background-attachment:fixed;
+   background-color:#FFFFFF;
+}
+a{
+	text-decoration:none;
+	target:_blank;
+	color:#777;
+	outline:none; 
+}
+a:hover{
+	color:#ff6421;
+}
+@font-face {
+	font-family: font1;
+	src: url("font/ResourceHanRoundedCN-Heavy.ttf");
+}
+@font-face {
+    font-family: unifont;
+    src: url(font/unifont.ttf)
+}
+.box1{
+	width:100%;
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.box2{
+	height:380px;
+	width:850px;
+	position:absolute;
+	/* top:50%;
+	left:50%;
+	transform:translate(-50%,-50%); */
+	border-radius:10px;
+	overflow:hidden;
+	background:#ff6421;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	transition-duration:1s;
+}
+.image1{
+	transition-duration:1s;
+}
+.box3{
+	/* width:850px; */
+	border-radius:10px;
+	display:flex;
+	flex-direction: row-reverse;
+}
+.loginBox{
+	height:550px;
+	width:410px;
+	border-radius:10px;
+	overflow:hidden;
+	background:#fff;
+	z-index:10;
+	margin:10px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	transition-duration:1s;
+}
+.loadLoginBox{
+	height:550px;
+	width:410px;
+	border-radius:10px;
+	overflow:hidden;
+}
+@keyframes loadLoginBox{
+	0%{
+		opacity:0;
+		transform:translateY(30px);
+	}
+	100%{
+		opacity:1;
+	}
+}
+@keyframes removeLoginBox{
+	0%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+		transform:translateY(30px);
+	}
+}
+.h1{
+	width:100%;
+	font-family:font1;
+	font-size:40px;
+	text-align: center;
+	margin-top:10px;
+	color:#ff6421;
+}
+.box4{
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top:10px;
+	margin-bottom:40px;
+}
+#headers2{
+	width:100px;
+	height:100px;
+	border-radius: 100px;
+	overflow:hidden;
+	transition-duration: 0.5s;
+	background:#fff;
+	position:absolute;
+}
+.boxHeaders{
+	width:100px;
+	height:100px;
+	border-radius: 100px;
+	overflow:hidden;
+}
+img#headers{
+	width:100px;
+	height:100px;
+}
+.boxInupt{
+	position:relative;
+	margin-left:30px;
+	margin-right:30px;
+	margin-top:20px;
+	width:100%-60px;
+	height:32px;
+	color:rgba(0,0,0,0.5);
+}
+.boxInupt input{
+	width:100%;
+	height:30px;
+	border:none;
+	box-shadow:none;
+	font-family:font1;
+	font-size:20px;
+}
+.boxInupt .line2{
+	position:absolute;
+	width:100%;
+	height:2px;
+	background:#ff6421;
+}
+.boxInputText{
+	position:absolute;
+	top:0px;
+	font-family:font1;
+	font-size:20px;
+	transition-duration: 0.5s;
+	pointer-events: none;
+}
+.displayPassword{
+	border:none;
+	outline:none;
+	background:none;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+}
+#username:valid ~ .boxInputText,
+#username:focus ~ .boxInputText{
+	transform :translateY(-16px);
+	font-size:15px;
+	color:#ff6421;
+}
+#password:valid ~ .boxInputText,
+#password:focus ~ .boxInputText{
+	transform :translateY(-16px);
+	font-size:15px;
+	color:#ff6421;
+}
+.box7{
+	width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:center;
+}
+.verificationCode{
+	font-size:15px;
+	font-family:font1;
+	color:#ff6421;
+}
+.resetVerificationCode{
+	border:none;
+	outline:none;
+	background:none;
+}
+.inputVerificationCode{
+	position:relative;
+	height:60px;
+	width:100%-60px;
+	margin-left:30px;
+	margin-right:30px;
+	text-align:center;
+}
+.inputVerificationCode input{
+	margin-left:30px;
+	width:230px;
+	height:60px;
+	border:none;
+	box-shadow:none;
+	font-family:font1;
+	font-size:45px;
+	letter-spacing:30px;
+}
+.inputVerificationCode  .line{
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+	display:flex;
+	width:260px;
+}
+.inputVerificationCode  .line .l{
+	margin-left:28px;
+	width:30px;
+	height:2px;
+	background:#ff6421;
+}
+.box5{
+	width:100%;
+	height:60px;
+	margin-top:30px;
+	text-align:center;
+}
+.buttonLogin{
+	border:none;
+	outline:none;
+	width:180px;
+	height:60px;
+	border-radius: 60px;
+	font-family:font1;
+	font-size:30px;
+	color:#fff;
+	background:#ff6421;
+}
+.box6{
+	margin-top:15px;
+	width:100%;
+	font-family:font1;
+	font-size:15px;
+	color:#ff6421;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+}
+.signUp{
+	margin-right:100px;
+}
+.loginSwitchModel{
+	font-family:font1;
+	font-size:15px;
+	color:#ff6421;
+	border:none;
+	outline:none;
+	background:none;
+}
